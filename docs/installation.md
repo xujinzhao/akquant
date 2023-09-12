@@ -1,6 +1,7 @@
 # PyBroker 安装
 
-PyBroker 目前支持在 Windows，macOS 和 Linux 中 Python 3.9 及以上版本，建议使用 Python 3.11 及以上版本。
+PyBroker 目前支持在 Windows，macOS 和 Linux 中 Python 3.9 及以上版本，
+建议使用 Python 3.11 及以上版本。
 
 > 此处需要注意 Windows 10 及以上版本
 
