@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: 利用 PyBroker 进行量化投资
 site_url: https://akfamily.github.io/akquant
+repo_url: https://github.com/akfamily/akquant
+repo_name: akfamily/akquant
 nav:
   - PyBroker 介绍: index.md
   - PyBroker 安装: installation.md
@@ -9,6 +11,8 @@ nav:
 theme:
   name: material
   language: zh
+  icon:
+    repo: fontawesome/brands/github
   features:
     - content.code.copy
     - content.code.select
