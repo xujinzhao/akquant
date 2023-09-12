@@ -13,7 +13,7 @@ PyBroker 中文文档地址：[点击进入中文文档](https://www.pybroker.co
 ## 安装
 
 ```shell
-pip install lib-pybroker
+pip install lib-pybroker --upgrade
 ```
 
 ## 环境配置
