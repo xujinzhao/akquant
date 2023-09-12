@@ -22,5 +22,5 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material mike
       - name: Copy CNAME
-        run: cp CNAME site/
+        run: cp CNAME /
       - run: mkdocs gh-deploy --force
