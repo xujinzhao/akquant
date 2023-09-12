@@ -21,10 +21,10 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mike
-      - name: Build MkDocs site
-        run: mkdocs build
-      - name: Change permissions
-        run: chmod -R 777 site/
-      - name: Copy CNAME
-        run: cp CNAME site/
+#      - name: Build MkDocs site
+#        run: mkdocs build
+#      - name: Change permissions
+#        run: chmod -R 777 site/
+#      - name: Copy CNAME
+#        run: cp CNAME site/
       - run: mkdocs gh-deploy --force
