@@ -34,5 +34,5 @@ extra_javascript:
 extra:
   version:
     provider: mike
-extra_files:
-  - CNAME
+#extra_files:
+#  - CNAME
