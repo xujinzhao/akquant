@@ -1,5 +1,7 @@
 # PyBroker 介绍
 
+> 你是否希望借助 Python 和机器学习的力量来优化您的交易策略？那么你需要了解一下 PyBroker！这个 Python 框架专为开发算法交易策略而设计，尤其关注使用机器学习的策略。借助 PyBroker，你可以轻松创建和微调交易规则，构建强大的模型，并深入了解你的策略表现。
+
 配置文档：[点击进入](https://squidfunk.github.io/mkdocs-material/)
 
 PyBroker 项目 [GitHub 地址](https://github.com/edtechre/pybroker)
