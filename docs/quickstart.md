@@ -4,4 +4,6 @@
 
 ## 运行策略
 
+可以通过 `strategy.backtest` 来运行
+
 ##  查看结果
