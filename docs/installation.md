@@ -45,7 +45,7 @@ cd pybroker
 python setup.py install
 ```
 
-此处不建议使用源码安装，源码中的对 PyBroker 需要的依赖库版本限制不够严格，比如使用 pandas 2.1.0
+> 此处不建议使用源码安装，源码中的对 PyBroker 需要的依赖库版本限制不够严格，比如使用 pandas 2.1.0
 版本则目前不兼容。
 
 ## 查看版本
