@@ -143,7 +143,7 @@ date                                      ...
 [415 rows x 7 columns]
 ```
 
-## 查看交易
+### 查看交易
 
 ```python
 print(result.trades)
