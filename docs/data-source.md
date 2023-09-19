@@ -6,7 +6,7 @@ PyBroker 提供了自定义数据源的功能，可以通过如下方式自定�
 
 ``` py title="ds_01.py" linenums="1" hl_lines="5 12"
 import pandas as pd
-import pybroker
+import pybroker as pb
 from pybroker.data import DataSource
 
 class CSVDataSource(DataSource):
