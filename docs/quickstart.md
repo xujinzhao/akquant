@@ -267,16 +267,19 @@ id                                      ...
 ## 策略代码
 
 ```python
+# 导入相关模块和类
 import pybroker as pb
 from pybroker import Strategy, StrategyConfig, ExecContext
 from pybroker.ext.data import AKShare
 
+# 查看当前版本
 print(pb.__version__)
 
+# 策略配置
 config = StrategyConfig(initial_cash=500_000)
 strategy = Strategy(data_source=AKShare(), start_date='20220101', end_date='20230916', config=config)
 
-
+# 定义规则
 def buy_low(ctx: ExecContext):
     # 如果当前已经持有仓位，则不再买入。
     if ctx.long_pos():
@@ -290,8 +293,14 @@ def buy_low(ctx: ExecContext):
         # 设置持有仓位的时间，该时间为 3 个交易日。
         ctx.hold_bars = 3
 
-
+# 执行回测
 strategy.add_execution(fn=buy_low, symbols=['000001', '600000'])
 result = strategy.backtest()
-print(result.orders)
+
+# 查看结果
+print(result.metrics_df)  # 查看绩效
+print(result.orders)  # 查看订单
+print(result.positions)  # 查看持仓
+print(result.portfolio)  # 查看投资组合
+print(result.trades)  # 查看交易
 ```
