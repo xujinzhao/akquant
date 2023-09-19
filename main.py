@@ -5,7 +5,12 @@ from pybroker.ext.data import AKShare
 print(pb.__version__)
 
 config = StrategyConfig(initial_cash=500_000)
-strategy = Strategy(data_source=AKShare(), start_date='20220101', end_date='20230916', config=config)
+strategy = Strategy(
+    data_source=AKShare(),
+    start_date='20220101',
+    end_date='20230916',
+    config=config
+)
 
 
 def buy_low(ctx: ExecContext):
