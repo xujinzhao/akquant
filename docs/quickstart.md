@@ -29,7 +29,12 @@ config = StrategyConfig(initial_cash=500_000)
 2. `initial_cash` 参数用于配置策略的初始资金，默认为 10 万。
 
 ```python
-strategy = Strategy(data_source=AKShare(), start_date='20220101', end_date='20230916', config=config)
+strategy = Strategy(
+    data_source=AKShare(),
+    start_date='20220101',
+    end_date='20230916',
+    config=config
+)
 ```
 
 1. 创建一个策略对象，该对象用于运行策略。
@@ -277,7 +282,12 @@ print(pb.__version__)
 
 # 策略配置
 config = StrategyConfig(initial_cash=500_000)
-strategy = Strategy(data_source=AKShare(), start_date='20220101', end_date='20230916', config=config)
+strategy = Strategy(
+    data_source=AKShare(),
+    start_date='20220101',
+    end_date='20230916',
+    config=config
+)
 
 # 定义规则
 def buy_low(ctx: ExecContext):
