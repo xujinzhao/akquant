@@ -9,6 +9,7 @@ nav:
   - 从数据源开始: data_source.md
   - 文章分享: article.md
   - 财经数据源: fin_data.md
+  - 量化投资资源: quant_resource.md
 theme:
   name: material
   language: zh
