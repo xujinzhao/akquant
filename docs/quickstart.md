@@ -71,7 +71,56 @@ strategy.add_execution(fn=buy_low, symbols=['000001', '600000'])
 result = strategy.backtest()
 ```
 
-## 产看结果
+## 查看结果
+
+### 查看绩效
+
+```python
+print(result.metrics_df)
+```
+
+```shell
+                      name         value
+0              trade_count  6.000000e+01
+1     initial_market_value  5.000000e+05
+2         end_market_value  4.807408e+05
+3                total_pnl -1.925923e+04
+4           unrealized_pnl  1.818989e-11
+5         total_return_pct -3.851846e+00
+6             total_profit  4.150577e+04
+7               total_loss -6.076500e+04
+8               total_fees  0.000000e+00
+9             max_drawdown -3.168807e+04
+10        max_drawdown_pct -6.280127e+00
+11                win_rate  4.745763e+01
+12               loss_rate  5.254237e+01
+13          winning_trades  2.800000e+01
+14           losing_trades  3.100000e+01
+15                 avg_pnl -3.209872e+02
+16          avg_return_pct -2.623333e-01
+17          avg_trade_bars  3.000000e+00
+18              avg_profit  1.482349e+03
+19          avg_profit_pct  1.242857e+00
+20  avg_winning_trade_bars  3.000000e+00
+21                avg_loss -1.960161e+03
+22            avg_loss_pct -1.630323e+00
+23   avg_losing_trade_bars  3.000000e+00
+24             largest_win  4.888940e+03
+25         largest_win_pct  4.060000e+00
+26        largest_win_bars  3.000000e+00
+27            largest_loss -7.065140e+03
+28        largest_loss_pct -5.780000e+00
+29       largest_loss_bars  3.000000e+00
+30                max_wins  3.000000e+00
+31              max_losses  5.000000e+00
+32                  sharpe -4.184734e-02
+33                 sortino -4.060695e-02
+34           profit_factor  8.291367e-01
+35             ulcer_index  6.942926e-01
+36                     upi -1.328477e-02
+37               equity_r2  6.199979e-01
+38               std_error  6.892189e+03
+```
 
 ### 查看订单
 
