@@ -180,3 +180,9 @@ wheel                      0.38.4
 xlrd                       2.0.1
 yfinance                   0.2.28
 ```
+
+## 参考资料
+
+- [PyBroker PyPI](https://pypi.org/project/lib-pybroker/)
+- [PyBroker GitHub](https://github.com/edtechre/pybroker/)
+- [清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
