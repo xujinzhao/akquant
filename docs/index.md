@@ -5,8 +5,6 @@
 > 尤其关注使用机器学习的策略。借助 PyBroker，你可以轻松创建和微调交易规则，
 > 构建强大的模型，并深入了解你的策略表现。
 
-配置文档：[点击进入](https://squidfunk.github.io/mkdocs-material/)
-
 PyBroker 项目 [GitHub 地址](https://github.com/edtechre/pybroker)
 
 PyBroker 英文文档地址：[点击进入英文文档](https://www.pybroker.com/en/latest/)
