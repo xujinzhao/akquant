@@ -19,8 +19,8 @@ pip install lib-pybroker --upgrade
 
 ## 环境配置
 
-PyBroker 支持在 Windows、macOS 和 Linux 中
-Python 3.9 及以上版本，建议使用 Python 3.11 及以上版本。
+PyBroker 支持在 Windows、macOS 和 Linux 中的
+Python 3.9（建议使用 Python 3.11）及以上版本使用。
 
 ## 策略示例
 
