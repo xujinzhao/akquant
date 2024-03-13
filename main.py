@@ -6,10 +6,7 @@ print(pb.__version__)
 
 config = StrategyConfig(initial_cash=500_000)
 strategy = Strategy(
-    data_source=AKShare(),
-    start_date='20220101',
-    end_date='20230916',
-    config=config
+    data_source=AKShare(), start_date="20220101", end_date="20240313", config=config
 )
 
 
@@ -27,6 +24,6 @@ def buy_low(ctx: ExecContext):
         ctx.hold_bars = 3
 
 
-strategy.add_execution(fn=buy_low, symbols=['000001', '600000'])
+strategy.add_execution(fn=buy_low, symbols=["000001", "600000"])
 result = strategy.backtest()
 print(result.orders)
