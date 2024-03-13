@@ -135,7 +135,7 @@ print(result.orders)
 
 ```shell
      type  symbol       date  shares  limit_price  fill_price  fees
-id                                                                 
+id
 1     buy  000001 2022-01-17      44      2822.91     2818.04   0.0
 2    sell  000001 2022-01-20      44          NaN     2922.06   0.0
 3     buy  000001 2022-01-25      42      2964.31     2922.88   0.0
@@ -158,7 +158,7 @@ print(result.positions)
 
 ```shell
                    long_shares  short_shares  ...  margin  unrealized_pnl
-symbol date                                   ...                        
+symbol date                                   ...
 000001 2022-01-17           44             0  ...     0.0         -572.00
        2022-01-18           44             0  ...     0.0         1573.44
        2022-01-19           44             0  ...     0.0         1430.44
@@ -182,7 +182,7 @@ print(result.portfolio)
 ```shell
 
                  cash     equity  margin  ...       pnl  unrealized_pnl  fees
-date                                      ...                                
+date                                      ...
 2022-01-04  500000.00  500000.00     0.0  ...      0.00             0.0   0.0
 2022-01-05  500000.00  500000.00     0.0  ...      0.00             0.0   0.0
 2022-01-06  500000.00  500000.00     0.0  ...      0.00             0.0   0.0
@@ -205,7 +205,7 @@ print(result.trades)
 
 ```shell
     type  symbol entry_date  exit_date  ...   agg_pnl  bars  pnl_per_bar  stop
-id                                      ...                                   
+id                                      ...
 1   long  000001 2022-01-17 2022-01-20  ...   4576.88     3      1525.63   bar
 2   long  000001 2022-01-25 2022-01-28  ...   -952.42     3     -1843.10   bar
 3   long  600000 2022-01-25 2022-01-28  ...  -2524.27     3      -523.95   bar
