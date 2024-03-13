@@ -27,4 +27,5 @@ jobs:
 #        run: chmod -R 777 site/
 #      - name: Copy CNAME
 #        run: cp CNAME site/
+
       - run: mkdocs gh-deploy --force
