@@ -2,7 +2,7 @@
 
 ## 环境搭建
 
-1. **安装依赖:**
+### **安装依赖:**
 
    - 克隆项目到本地后，进入项目目录。
    - 运行以下命令安装项目依赖：
@@ -11,12 +11,15 @@
      pip install -r requirements.txt
      ```
 
-2. **安装 pre-commit 和 ruff：**
+### **安装 pre-commit 和 ruff：**
+
    - 项目使用 pre-commit 进行代码风格检查和格式化，使用 ruff 进行代码质量检查。
    - 运行以下命令安装 pre-commit 和 ruff：
+
      ```shell
      pip install pre-commit ruff
      ```
+
    - 在项目根目录下运行以下命令安装 pre-commit 的 Git 钩子：
      ```shell
      pre-commit install
