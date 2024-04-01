@@ -1,7 +1,7 @@
 # PyBroker 安装
 
 PyBroker 目前支持在 Windows，macOS 和 Linux 中 Python 3.9 及以上版本，
-建议使用 Python 3.11 及以上版本中进行安装和使用。
+建议使用 Python 3.12 及以上版本中进行安装和使用。
 
 > 此处 Windows 用户需要注意，Windows 10 及以上版本才支持 Python 3.9 及以上版本。
 
@@ -47,9 +47,6 @@ cd pybroker
 python setup.py install
 ```
 
-> 此处不建议使用源码安装，源码中的对 PyBroker 需要的依赖库版本限制不够严格，比如使用 pandas 2.1.0
-版本则目前不兼容。
-
 ## 查看版本
 
 当成功安装 PyBroker 后，可以通过如下命令查看安装的版本：
@@ -63,7 +60,7 @@ print(pb.__version__)
 结果显示：
 
 ```shell
-1.1.29
+1.1.33
 ```
 
 ## 依赖库
