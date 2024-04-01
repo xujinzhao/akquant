@@ -27,9 +27,8 @@ jobs:
           git config user.name "github-actions[bot]"
       - name: Deploy MkDocs site
         run: |
-          git branch -D gh-pages
-          git fetch origin gh-pages
-          git checkout gh-pages
+          git config pull.rebase false
+          git pull origin gh-pages
           version=$(date +%Y.%m.%d)
           mike deploy --push --update-aliases $version latest
           mike set-default --push latest
