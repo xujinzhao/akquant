@@ -3,8 +3,10 @@
 ## 环境搭建
 
 1. **安装依赖:**
+
    - 克隆项目到本地后，进入项目目录。
    - 运行以下命令安装项目依赖：
+
      ```shell
      pip install -r requirements.txt
      ```
