@@ -5,3 +5,7 @@ lib-pybroker
 ruff
 ruff-lsp
 pre-commit
+
+# docs
+mkdocs-material
+mike
