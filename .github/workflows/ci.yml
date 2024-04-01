@@ -14,17 +14,19 @@ jobs:
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mike
-#      - name: Build MkDocs site
-#        run: mkdocs build
-#      - name: Change permissions
-#        run: chmod -R 777 site/
-#      - name: Copy CNAME
-#        run: cp CNAME site/
-      - run: mkdocs gh-deploy --force
+      - name: Set up git user
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+      - name: Deploy MkDocs site
+        run: |
+          version=$(date +%Y.%m.%d)
+          mike deploy --push --update-aliases $version latest
+          mike set-default --push latest
