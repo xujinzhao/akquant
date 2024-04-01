@@ -10,7 +10,7 @@ nav:
   - 文章分享: article.md
   - 财经数据源: fin-data.md
   - 量化投资资源: quant-resource.md
-  - 贡献文档: contribute.md
+  - 贡献文档: contributing.md
 theme:
   name: material
   language: zh
