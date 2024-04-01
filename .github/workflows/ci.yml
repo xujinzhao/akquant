@@ -27,8 +27,12 @@ jobs:
           git config user.name "github-actions[bot]"
       - name: Deploy MkDocs site
         run: |
-          git config pull.rebase true
-          git pull origin gh-pages
+          if git ls-remote --exit-code --heads origin gh-pages > /dev/null 2>&1; then
+            git config pull.rebase true
+            git pull origin gh-pages
+          else
+            echo "gh-pages branch does not exist yet. Skipping pull."
+          fi
           version=$(date +%Y.%m.%d)
           mike deploy --push --update-aliases $version latest
           mike set-default --push latest
