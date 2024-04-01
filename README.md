@@ -14,5 +14,5 @@ AKQuant 是一个开源的量化投资教程项目，主要讲述 [PyBroker](htt
 
 ## 更新进度
 
-1. 目前 PyBroker 的版本为：v1.1.31
+1. 目前 PyBroker 的版本为：v1.1.33
 2. 本文档支持使用 Python 最新版本编辑
