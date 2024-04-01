@@ -33,6 +33,6 @@ jobs:
           else
             echo "gh-pages branch does not exist yet. Skipping pull."
           fi
-          version=$(date +%Y.%m.%d)
+          version=$(date +%Y.%m.%d-%H.%M.%S)
           mike deploy --push --update-aliases $version latest
           mike set-default --push latest
