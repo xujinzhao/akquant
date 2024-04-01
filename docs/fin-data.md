@@ -24,6 +24,7 @@
 12. [万矿](https://www.wmcloud.com/)
 13. [通联数据](https://www.allinfinance.com/)
 14. [恒有数](https://udata.hs.net/)
+15. [讯投研](https://dict.thinktrader.net/dictionary/)
 
 国内商业及学术研究数据源：
 
